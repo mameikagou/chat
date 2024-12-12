@@ -5,8 +5,20 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: rgb(29, 147, 171);
+
   margin:0;
   padding:0;
+  box-sizing: border-box;
+
+  --window-width: 90vw;
+  --window-height: 90vh;
+  --sidebar-width: 300px;
+  --window-content-width: calc(100% - var(--sidebar-width));
+  --full-height: 100%;
+  
+  --card-shadow: 0px 2px 4px 0px rgb(0, 0, 0, 0.05);
+  --border-in-light: 1px solid rgb(222, 222, 222);
 }
 
 @media (prefers-color-scheme: dark) {
