@@ -40,8 +40,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="">
-        <TightContainer>{children}</TightContainer>
+      <body className="w-auto">
+        <TightContainer>
+          <div className="box-border px-20 flex justify-center">{children}</div>
+        </TightContainer>
       </body>
     </html>
   );
